@@ -1,0 +1,40 @@
+#!/usr/bin/make -f
+
+include /usr/share/dpkg/default.mk
+
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+
+# nginx_mod needs to find the modules source dir using sourcedirectory
+# nginx_mod calls doit_in_builddir but without builddirectory,
+# it tries to chdir from sourcedirectory and fails
+
+%:
+	dh $@ --sourcedirectory=nginx --builddirectory=build-modules
+
+
+override_dh_auto_configure:
+	./configure \
+		--cc-opt="$(shell dpkg-buildflags --get CFLAGS) -fPIC $(shell dpkg-buildflags --get CPPFLAGS)" \
+		--ld-opt="$(shell dpkg-buildflags --get LDFLAGS)" \
+		--no-libxml2 \
+		--no-zlib
+	dh_auto_configure --buildsystem=nginx_mod
+
+override_dh_auto_build-arch:
+	make
+	dh_auto_build --buildsystem=nginx_mod
+	help2man --no-info --version-option=-v --help-option=-h --name='JavaScript for Nginx' ./build/njs -o build/njs.1
+
+override_dh_auto_clean:
+	rm -f Makefile
+	rm -rf build
+	rm -rf build-modules
+
+NGINX_VERSION = $(shell /usr/sbin/nginx -V 2>&1 | sed -E -ne 's|^nginx version: nginx/([^ ]+).*|\1|p')
+DEB_VERSION_EPOCH = $(call dpkg_late_eval,DEB_VERSION_EPOCH,echo '$(DEB_VERSION_EPOCH_UPSTREAM)' | sed -e 's/[^:]*$$//')
+DEB_VERSION_REVISION = $(call dpkg_late_eval,DEB_VERSION_REVISION,echo '$(DEB_VERSION_UPSTREAM_REVISION)' | sed -e 's/^.*-//')
+NGINX_DEB_VERSION = $(DEB_VERSION_EPOCH)$(DEB_VERSION_UPSTREAM)+$(NGINX_VERSION)-$(DEB_VERSION_REVISION)
+
+override_dh_gencontrol:
+	dh_gencontrol --remaining-packages -- -v$(NGINX_DEB_VERSION)
+

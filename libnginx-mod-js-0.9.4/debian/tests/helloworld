@@ -1,0 +1,42 @@
+#!/bin/sh
+set -e
+
+cat <<EOF > '/etc/nginx/sites-enabled/default'
+server {
+  listen 80 default_server;
+
+  location /helloworld {
+    js_path "/etc/nginx/njs/";
+    js_import hello.js;
+    js_content hello.hello;
+  }
+}
+EOF
+
+mkdir -p '/etc/nginx/njs'
+cat <<EOF > "/etc/nginx/njs/hello.js"
+function hello(r) {
+  r.return(200, "Hello world!\n");
+}
+export default {hello}
+EOF
+
+exp="Hello world!
+response_code: 200"
+
+nginx -t
+invoke-rc.d nginx restart || { journalctl -n all -xu nginx.service; exit 1; }
+
+out=`curl --fail -w "response_code: %{http_code}\n" http://127.0.0.1/helloworld`
+
+if [ x"${out}" != x"${exp}" ]; then
+  echo "output:"
+  echo "====================="
+  echo "${out}"
+  echo "====================="
+  echo "expected output:"
+  echo "====================="
+  echo "${exp}"
+  echo "====================="
+  exit 1
+fi

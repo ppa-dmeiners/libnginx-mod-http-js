@@ -1,0 +1,450 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+
+Files: *
+Copyright: 2022, 2025, Vadim Zhestikov
+ 2019-2022, Alexander Borisov
+ 2017-2025, Dmitry Volyntsev
+ 2015-2019, NGINX, Inc.
+ 2019-2025 F5, Inc.
+ 2015-2021, Igor Sysoev
+License: BSD-2-clause
+
+Files: auto/*
+Copyright: NGINX, Inc.
+ Igor Sysoev
+License: BSD-2-clause
+
+Files: auto/computed_goto
+Copyright: Vadim Zhestikov
+ NGINX, Inc.
+License: BSD-2-clause
+
+Files: auto/endianness
+  auto/expect
+  auto/init
+  auto/libbfd
+  auto/libxml2
+  auto/link
+  auto/module
+  auto/modules
+  auto/openssl
+  auto/readline
+  auto/stat
+  auto/zlib
+Copyright: NGINX, Inc.
+ Dmitry Volyntsev
+License: BSD-2-clause
+
+Files: auto/sources
+Copyright: 2019-2022, Alexander Borisov
+ 2017-2022, Dmitry Volyntsev
+ 2015-2022, NGINX, Inc.
+ 2015-2021, Igor Sysoev
+License: BSD-2-clause
+
+Files: configure
+Copyright: NGINX, Inc.
+ Igor Sysoev
+License: BSD-2-clause
+
+Files: external/*
+Copyright: NGINX, Inc.
+ Dmitry Volyntsev
+License: BSD-2-clause
+
+Files: external/njs_query_string_module.c
+Copyright: NGINX, Inc.
+ Dmitry Volyntsev
+ Alexander Borisov
+License: BSD-2-clause
+
+Files: external/njs_regex.c
+Copyright: NGINX, Inc.
+ Igor Sysoev
+ Dmitry Volyntsev
+License: BSD-2-clause
+
+Files: nginx/*
+Copyright: Roman Arutyunyan
+ NGINX, Inc.
+ Dmitry Volyntsev
+License: BSD-2-clause
+
+Files: nginx/config
+Copyright: Roman Arutyunyan
+License: BSD-2-clause
+
+Files: nginx/ngx_js_fetch.c
+Copyright: hongzhidao
+ NGINX, Inc.
+ Dmitry Volyntsev
+ Antoine Bonavita
+License: BSD-2-clause
+
+Files: nginx/ngx_js_fetch.h
+  nginx/ngx_js_regex.c
+  nginx/ngx_js_shared_dict.c
+  nginx/ngx_js_shared_dict.h
+Copyright: NGINX, Inc.
+ Dmitry Volyntsev
+License: BSD-2-clause
+
+Files: nginx/t/js.t
+Copyright: Roman Arutyunyan
+ Nginx, Inc.
+ Dmitry Volyntsev
+License: BSD-2-clause
+
+Files: nginx/t/js_args.t
+  nginx/t/js_async.t
+  nginx/t/js_body_filter.t
+  nginx/t/js_body_filter_if.t
+  nginx/t/js_buffer.t
+  nginx/t/js_dump.t
+  nginx/t/js_fetch.t
+  nginx/t/js_fetch_objects.t
+  nginx/t/js_fetch_resolver.t
+  nginx/t/js_fetch_timeout.t
+  nginx/t/js_header_filter.t
+  nginx/t/js_header_filter_if.t
+  nginx/t/js_headers.t
+  nginx/t/js_import.t
+  nginx/t/js_import2.t
+  nginx/t/js_internal_redirect.t
+  nginx/t/js_modules.t
+  nginx/t/js_ngx.t
+  nginx/t/js_object.t
+  nginx/t/js_paths.t
+  nginx/t/js_periodic.t
+  nginx/t/js_request_body.t
+  nginx/t/js_shared_dict.t
+  nginx/t/js_var.t
+  nginx/t/js_var2.t
+  nginx/t/js_variables.t
+  nginx/t/stream_js_buffer.t
+  nginx/t/stream_js_exit.t
+  nginx/t/stream_js_fetch.t
+  nginx/t/stream_js_fetch_https.t
+  nginx/t/stream_js_fetch_init.t
+  nginx/t/stream_js_import2.t
+  nginx/t/stream_js_ngx.t
+  nginx/t/stream_js_object.t
+  nginx/t/stream_js_periodic.t
+  nginx/t/stream_js_send.t
+  nginx/t/stream_js_shared_dict.t
+  nginx/t/stream_js_var.t
+  nginx/t/stream_js_var2.t
+  nginx/t/stream_js_variables.t
+Copyright: Nginx, Inc.
+ Dmitry Volyntsev
+License: BSD-2-clause
+
+Files: nginx/t/js_fetch_https.t
+Copyright: Nginx, Inc.
+ Antoine Bonavita
+License: BSD-2-clause
+
+Files: nginx/t/js_fetch_verify.t
+  nginx/t/js_return.t
+Copyright: Sergey Kandaurov
+ Nginx, Inc.
+License: BSD-2-clause
+
+Files: nginx/t/js_preload_object.t
+  nginx/t/stream_js_preload_object.t
+Copyright: Vadim Zhestikov
+ Nginx, Inc.
+License: BSD-2-clause
+
+Files: nginx/t/js_promise.t
+Copyright: Nginx, Inc.
+License: BSD-2-clause
+
+Files: nginx/t/js_subrequests.t
+Copyright: Nginx, Inc.
+ Dmitry Volyntsev.
+License: BSD-2-clause
+
+Files: nginx/t/stream_js.t
+Copyright: Nginx, Inc.
+ Dmitry Volyntsev
+ Andrey Zelenkov
+License: BSD-2-clause
+
+Files: src/*
+Copyright: NGINX, Inc.
+ Igor Sysoev
+License: BSD-2-clause
+
+Files: src/njs.pc.in
+  src/njs_unicode_lower_case.h
+  src/njs_unicode_lower_case.pl
+  src/njs_unicode_upper_case.h
+  src/njs_unicode_upper_case.pl
+Copyright: 2019-2022, Alexander Borisov
+ 2017-2022, Dmitry Volyntsev
+ 2015-2022, NGINX, Inc.
+ 2015-2021, Igor Sysoev
+License: BSD-2-clause
+
+Files: src/njs_addr2line.c
+Copyright: NGINX, Inc.
+ Dmitry Volyntsev
+License: GPL-2+
+
+Files: src/njs_addr2line.h
+  src/njs_dtoa.h
+  src/njs_dtoa_fixed.h
+  src/njs_strtod.h
+Copyright: Nginx, Inc.
+ Dmitry Volyntsev
+License: BSD-2-clause
+
+Files: src/njs_assert.h
+  src/njs_chb.c
+  src/njs_chb.h
+  src/njs_diyfp.c
+  src/njs_diyfp.h
+  src/njs_error.c
+  src/njs_error.h
+  src/njs_event.h
+  src/njs_generator.h
+  src/njs_json.c
+  src/njs_json.h
+  src/njs_main.h
+  src/njs_module.c
+  src/njs_object_prop_declare.h
+  src/njs_str.c
+  src/njs_unix.h
+  src/njs_utils.c
+  src/njs_utils.h
+Copyright: NGINX, Inc.
+ Dmitry Volyntsev
+License: BSD-2-clause
+
+Files: src/njs_async.c
+  src/njs_async.h
+  src/njs_promise.c
+Copyright: Nginx, Inc.
+ Alexander Borisov
+License: BSD-2-clause
+
+Files: src/njs_buffer.c
+Copyright: NGINX, Inc.
+ Dmitry Volyntsev
+ Alexander Borisov
+License: BSD-2-clause
+
+Files: src/njs_buffer.h
+  src/njs_encoding.c
+  src/njs_encoding.h
+  src/njs_scope.c
+  src/njs_scope.h
+  src/njs_unicode.h
+  src/njs_utf16.c
+  src/njs_utf16.h
+Copyright: NGINX, Inc.
+ Alexander Borisov
+License: BSD-2-clause
+
+Files: src/njs_builtin.c
+  src/njs_typed_array.c
+  src/njs_variable.c
+Copyright: NGINX, Inc.
+ Igor Sysoev
+ Dmitry Volyntsev
+License: BSD-2-clause
+
+Files: src/njs_dtoa.c
+Copyright: NGINX, Inc.
+ Dmitry Volyntsev
+License: Expat
+
+Files: src/njs_dtoa_fixed.c
+Copyright: NGINX, Inc.
+ Dmitry Volyntsev
+ 2011, the V8 project authors.
+License: BSD-3-clause
+
+Files: src/njs_flathsh.c
+  src/njs_flathsh.h
+  src/njs_lexer_keyword.c
+Copyright: NGINX, Inc.
+License: BSD-2-clause
+
+Files: src/njs_generator.c
+Copyright: NGINX, Inc.
+ Igor Sysoev
+ Dmitry Volyntsev
+ Alexander Borisov
+License: BSD-2-clause
+
+Files: src/njs_iterator.c
+  src/njs_iterator.h
+Copyright: NGINX, Inc.
+ Artem S. Povalyukhin
+License: BSD-2-clause
+
+Files: src/njs_promise.h
+Copyright: Nginx, Inc.
+License: BSD-2-clause
+
+Files: src/njs_module.h
+Copyright: NGINX, Inc.
+ Dmitry Volynsev
+License: BSD-2-clause
+
+Files: src/njs_murmur_hash.c
+Copyright: Austin Appleby
+License: public-domain
+ The code is based on the code by Austin Appleby,
+ released to the public domain.
+
+Files: src/njs_parser.c
+  src/njs_parser.h
+Copyright: NGINX, Inc.
+ Igor Sysoev
+ Alexander Borisov
+License: BSD-2-clause
+
+Files: src/njs_strtod.c
+Copyright: 2012, the V8 project authors.
+License: BSD-3-clause
+
+Files: src/test/njs_externals_test.c
+  src/test/njs_externals_test.h
+Copyright: NGINX, Inc.
+ Dmitry Volyntsev
+License: BSD-2-clause
+
+Files: test/*
+Copyright: NGINX, Inc.
+ Dmitry Volyntsev
+License: BSD-2-clause
+
+Files: test/fs/*
+Copyright: 2019-2022, Alexander Borisov
+ 2017-2022, Dmitry Volyntsev
+ 2015-2022, NGINX, Inc.
+ 2015-2021, Igor Sysoev
+License: BSD-2-clause
+
+Files: test/harness/*
+Copyright: 2012, 2017, Ecma International.
+License: BSD-3-clause
+
+Files: test/inputrc
+  test/script_args.js
+Copyright: 2019-2022, Alexander Borisov
+ 2017-2022, Dmitry Volyntsev
+ 2015-2022, NGINX, Inc.
+ 2015-2021, Igor Sysoev
+License: BSD-2-clause
+
+Files: test/js/*
+Copyright: 2019-2022, Alexander Borisov
+ 2017-2022, Dmitry Volyntsev
+ 2015-2022, NGINX, Inc.
+ 2015-2021, Igor Sysoev
+License: BSD-2-clause
+
+Files: test/ts/*
+Copyright: 2019-2022, Alexander Borisov
+ 2017-2022, Dmitry Volyntsev
+ 2015-2022, NGINX, Inc.
+ 2015-2021, Igor Sysoev
+License: BSD-2-clause
+
+Files: test/webcrypto/*
+Copyright: 2019-2022, Alexander Borisov
+ 2017-2022, Dmitry Volyntsev
+ 2015-2022, NGINX, Inc.
+ 2015-2021, Igor Sysoev
+License: BSD-2-clause
+
+Files: utils/*
+Copyright: Nginx, Inc.
+License: BSD-2-clause
+
+License: BSD-2-clause
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ 1. Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+ 2. Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND
+ ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE
+ FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+ OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+ HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+ OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+ SUCH DAMAGE.
+
+License: BSD-3-clause
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are
+ met:
+ .
+ * Redistributions of source code must retain the above copyright
+   notice, this list of conditions and the following disclaimer.
+ * Redistributions in binary form must reproduce the above
+   copyright notice, this list of conditions and the following
+   disclaimer in the documentation and/or other materials provided
+   with the distribution.
+ * Neither the name of Google Inc. nor the names of its
+   contributors may be used to endorse or promote products derived
+   from this software without specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+ "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+ LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+ A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+ OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+ SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+ LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+ DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+License: Expat
+ Permission is hereby granted, free of charge, to any person
+ obtaining a copy of this software and associated
+ documentation files (the "Software"), to deal in the Software
+ without restriction, including without limitation the rights to
+ use, copy, modify, merge, publish, distribute, sublicense,
+ and/or sell copies of the Software, and to permit persons to
+ whom the Software is furnished to do so, subject to the
+ following conditions:
+ .
+ The above copyright notice and this permission notice shall
+ be included in all copies or substantial portions of the
+ Software.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT
+ WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+ INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+ MERCHANTABILITY, FITNESS FOR A PARTICULAR
+ PURPOSE AND NONINFRINGEMENT. IN NO EVENT
+ SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+ LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+ CONNECTION WITH THE SOFTWARE OR THE USE OR
+ OTHER DEALINGS IN THE SOFTWARE.
+
+License: GPL-2+
+ This program is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; version 2 dated June, 1991, or (at
+ your option) any later version.
+ On Debian systems, the complete text of version 2 of the GNU General
+ Public License can be found in '/usr/share/common-licenses/GPL-2'.

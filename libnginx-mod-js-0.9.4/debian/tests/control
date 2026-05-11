@@ -1,0 +1,16 @@
+Tests: generic
+Restrictions: allow-stderr isolation-container needs-root
+Depends: curl,
+         nginx,
+         nginx-core,
+         @,
+
+Tests: helloworld
+Restrictions: allow-stderr isolation-container needs-root
+Depends: curl,
+         nginx,
+         nginx-core,
+         @,
+
+Test-Command: njs -v
+Depends: njs,

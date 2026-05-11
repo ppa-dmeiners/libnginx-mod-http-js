@@ -1,0 +1,54 @@
+Source: libnginx-mod-js
+Section: httpd
+Priority: optional
+Maintainer: Debian Nginx Maintainers <pkg-nginx-maintainers@alioth-lists.debian.net>
+Uploaders: Jérémy Lal <kapouer@melix.org>,
+Build-Depends: debhelper-compat (= 13),
+               dh-sequence-nginx,
+               help2man,
+               libedit-dev,
+               libnginx-mod-stream,
+               nginx-dev (>= 1.24.0-2),
+Standards-Version: 4.6.2
+Homepage: https://nginx.org/en/docs/njs/
+Vcs-Git: https://salsa.debian.org/nginx-team/libnginx-mod-js.git
+Vcs-Browser: https://salsa.debian.org/nginx-team/libnginx-mod-js
+Rules-Requires-Root: no
+
+Package: libnginx-mod-http-js
+Architecture: any
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+Recommends: nginx,
+Description: JavaScript HTTP module for Nginx
+ This module extends Nginx with configuration directives
+ that allows one to run a subset of ECMAScript 5.1 (and later
+ extensions) language.
+ It features integration with
+  - response body filter
+  - location content handler
+  - http, server, location variables
+
+Package: libnginx-mod-stream-js
+Architecture: any
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+Recommends: nginx,
+Description: JavaScript Stream module for Nginx
+ This module extends Nginx with configuration directives
+ that allows one to run a subset of ECMAScript 5.1 (and later
+ extensions) language.
+ It features integration with
+  - the access phase
+  - the content phase
+  - stream, server variables
+
+Package: njs
+Architecture: any
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+Description: JavaScript for Nginx command-line utility
+ Run and debug scripts written for libnginx-mod-stream-js and
+ libnginx-mod-http-js Nginx modules.
+ This command is independent of Nginx and does not run inside it,
+ in consequence, HTTP and Stream objects are not available.

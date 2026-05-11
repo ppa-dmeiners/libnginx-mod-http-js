@@ -1,0 +1,3 @@
+# false positives
+source-is-missing [test/js/import_very_long_path.t.js]
+source-is-missing [test/webcrypto/export.t.mjs]
