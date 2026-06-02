@@ -1,0 +1,153 @@
+libnginx-mod-js (1:0.9.9-1+ubuntu24.04.1+deb.meiners.net+1.30.2) noble; urgency=medium
+
+  * Update to njs-0.9.9
+
+ -- David Meiners <david@meiners.net>  Tue, 02 Jun 2026 16:18:01 +0000
+
+libnginx-mod-js (1:0.9.4-1+ubuntu24.04.1+deb.meiners.net+1.30.2) noble; urgency=medium
+
+  * New upstream version 1.30.2
+
+ -- David Meiners <david@meiners.net>  Wed, 27 May 2026 20:17:16 +0000
+
+libnginx-mod-js (1:0.9.4-1+ubuntu24.04.1+deb.meiners.net+1.30.1) noble; urgency=medium
+
+  * build against nginx-abi-1.30.1
+
+ -- David Meiners <david@meiners.net>  Wed, 13 May 2026 22:15:28 +0000
+
+libnginx-mod-js (0.9.4-1+ubuntu24.04.1+deb.meiners.net+1.30.0) noble; urgency=medium
+
+  * build against nginx-abi-1.30.0
+
+ -- David Meiners <david@meiners.net>  Mon, 11 May 2026 20:43:44 +0000
+
+libnginx-mod-js (0.9.4-1+ubuntu24.04.1+deb.meiners.net+1.28.3) noble; urgency=medium
+
+  * Backport to noble from resolute
+
+ -- David Meiners <david@meiners.net>  Thu, 07 May 2026 23:09:28 +0000
+
+libnginx-mod-js (0.9.4-1build2) resolute; urgency=medium
+
+  * Rebuild against new nginx-abi-1.28.3-1.
+
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Tue, 31 Mar 2026 20:29:20 +0200
+
+libnginx-mod-js (0.9.4-1build1) resolute; urgency=medium
+
+  * Rebuild against new nginx-abi-1.28.2.
+
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Tue, 17 Feb 2026 22:04:49 +0100
+
+libnginx-mod-js (0.9.4-1) unstable; urgency=medium
+
+  * New upstream version 0.9.4
+
+ -- Jérémy Lal <kapouer@melix.org>  Mon, 05 Jan 2026 15:19:45 +0100
+
+libnginx-mod-js (0.9.1-1) unstable; urgency=medium
+
+  * New upstream version 0.9.1. Closes: #1097236.
+  * Update watch version 5
+  * Update path in lintian-overrides
+  * Update copyright
+  * Switch to DEP-14
+
+ -- Jérémy Lal <kapouer@melix.org>  Mon, 15 Sep 2025 14:53:36 +0200
+
+libnginx-mod-js (0.8.9-1) unstable; urgency=medium
+
+  * New upstream version 0.8.9
+  * Update copyright year, add F5.
+
+ -- Jérémy Lal <kapouer@melix.org>  Fri, 28 Feb 2025 11:59:49 +0100
+
+libnginx-mod-js (0.8.8-1) unstable; urgency=medium
+
+  * New upstream version 0.8.8
+
+ -- Jérémy Lal <kapouer@melix.org>  Tue, 10 Dec 2024 21:22:36 +0100
+
+libnginx-mod-js (0.8.5-1) unstable; urgency=medium
+
+  * New upstream version 0.8.5 (Closes: #1073274).
+
+ -- Jérémy Lal <kapouer@melix.org>  Sun, 01 Sep 2024 13:09:29 +0200
+
+libnginx-mod-js (0.8.4-1) unstable; urgency=medium
+
+  * New upstream version 0.8.4
+    Note that quickjs is not enabled.
+  * copyright: sync years and removed files
+
+ -- Jérémy Lal <kapouer@melix.org>  Fri, 14 Jun 2024 10:34:41 +0200
+
+libnginx-mod-js (0.8.2-1) unstable; urgency=medium
+
+  * New upstream version 0.8.2
+
+ -- Jérémy Lal <kapouer@melix.org>  Sun, 17 Dec 2023 18:34:12 +0100
+
+libnginx-mod-js (0.8.1-1) unstable; urgency=medium
+
+  * New upstream version 0.8.1
+  * d/copyright add copyright for newly added files in version 0.8.1
+  * Better usage of dh-sequence-nginx
+    * d/rules: remove override_dh_auto_test
+    * d/rules: remove '--with-stream' from dh_auto_configure
+    * d/control: remove Build-Depends nginx-abi-1.24.0-1
+    * d/control: use Build-Depends nginx-dev (>= 1.24.0-2)
+    * d/control: use Build-Depends libnginx-mod-stream instead of
+      libnginx-mod-stream (<<1.24.0.1~), libnginx-mod-stream (>=1.24.0)
+    * d/control: remove Depends libnginx-mod-stream (<<1.24.0.1~),
+      libnginx-mod-stream (>=1.24.0)
+
+ -- Jan Mojžíš <jan.mojzis@gmail.com>  Wed, 11 Oct 2023 18:53:30 +0200
+
+libnginx-mod-js (0.8.0-1) unstable; urgency=medium
+
+  [ Jan Mojžíš ]
+  * Team upload.
+  * New upstream version 0.8.0 (Closes: #1042174)
+  * d/changelog add copyright for newly added files in version 0.8.0
+
+  [ Jérémy Lal ]
+  * B-D libedit-dev to enable njs interactive shell
+
+ -- Jan Mojžíš <jan.mojzis@gmail.com>  Wed, 23 Aug 2023 17:20:19 +0200
+
+libnginx-mod-js (0.7.12-2) unstable; urgency=medium
+
+  * Team upload.
+  * d/copyright: update copyright from 'cme update dpkg-copyright'
+  * d/rules disable libxml2 and zlib feature (--no-libxml2, --no-zlib),
+    as a workaround for the bug with linking libxml2 and zlib.
+  * NEW ABI: rebuild with nginx-abi-1.24.0-1
+
+ -- Jan Mojžíš <jan.mojzis@gmail.com>  Wed, 28 Jun 2023 15:07:12 +0200
+
+libnginx-mod-js (0.7.12-1) unstable; urgency=medium
+
+  * New upstream version 0.7.12
+  * Add test/webcrypto/export.t.js to false positives
+  * Update copyright names, extend years.
+
+ -- Jérémy Lal <kapouer@melix.org>  Mon, 19 Jun 2023 09:55:51 +0200
+
+libnginx-mod-js (0.7.9-2) unstable; urgency=medium
+
+  * Team upload.
+  * d/rules: configure: remove --no-pcre2
+  * d/control: bump Standards-Version: 4.6.2, no changes
+  * d/gbb.conf: switched to debian branch main (debian-branch = main)
+  * d/copyright: updated to be compatible with 'cme update dpkg-copyright'
+  * NEW ABI: rebuild with nginx-abi-1.22.1-7
+
+ -- Jan Mojžíš <jan.mojzis@gmail.com>  Mon, 13 Feb 2023 12:56:52 +0100
+
+libnginx-mod-js (0.7.9-1) unstable; urgency=medium
+
+  * Initial release. (Closes: 1025998)
+
+ -- Jérémy Lal <kapouer@melix.org>  Tue, 20 Dec 2022 17:21:11 +0100
